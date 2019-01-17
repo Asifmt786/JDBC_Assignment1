@@ -14,3 +14,5 @@ INSERT INTO `sqlandjava`.`people` (`person_id`, `firstname`, `lastname`) VALUES 
 INSERT INTO `sqlandjava`.`people` (`person_id`, `firstname`, `lastname`) VALUES ('3', 'Erik', 'Fram');
 INSERT INTO `sqlandjava`.`people` (`person_id`, `firstname`, `lastname`) VALUES ('4', 'Gina', 'Hult');
 
+CREATE USER user@localhost IDENTIFIED by 'password';
+GRANT SELECT ON sqlandjava.people TO user@localhost;
